@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/dropdown_menu1"
+        app:showAsAction="ifRoom"
+        android:title="Small"
+        android:visible="true" />
+
+    <item android:id="@+id/dropdown_menu2"
+        app:showAsAction="ifRoom|withText"
+        android:title="Medium"
+        android:visible="true" />
+
+    <item android:id="@+id/dropdown_menu3"
+        app:showAsAction="ifRoom"
+        android:title="Large"
+        android:visible="true" />
+
+    <item android:id="@+id/dropdown_menu4"
+        app:showAsAction="ifRoom"
+        android:title="XLarge"
+        android:visible="true" />
+
+</menu>

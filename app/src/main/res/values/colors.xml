@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5389bc</color>
+    <color name="colorPrimaryDark">#5389bc</color>
+    <color name="colorAccent">#9bb1c5</color>
+    <color name="darkBlue">#067ef0</color>
+    <color name="lightBlue">#5d8fbe</color>
+
+    <color name="white">#ffffff</color>
+    <color name="adyen_green">#7ba5e8</color>
+    <color name="golden">#e45a0a</color>
+    <color name="shareColor">#e6b844</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+</resources>

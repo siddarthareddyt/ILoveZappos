@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ILoveZappos</string>
+
+    <string name="appTitle">I Love Zappos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="searchPlaceholder">Search</string>
+    <string name="titleName">I Love Zappos</string>
+
+    <string name="title_activity_product_page">ProductPageActivity</string>
+    <string name="shared_tranName">productShare</string>
+
+</resources>

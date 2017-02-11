@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zappos.siddartha.ilovezappos.Activity.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/zapToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="I"
+                android:layout_gravity="left|bottom"
+                android:id="@+id/toolbar_title1"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:typeface="serif"
+                android:textStyle="normal|bold"
+                android:layout_weight="0.3"
+                android:gravity="right"
+                android:layout_marginBottom="2dp"/>
+            <ImageView
+                android:id="@+id/loveImageTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/love_icon_wh"
+                android:layout_gravity="center|bottom"
+                android:layout_alignBottom="@+id/zapToolBar"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="0.1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Zappos"
+                android:layout_gravity="right|bottom"
+                android:id="@+id/toolbar_title"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:typeface="serif"
+                android:textStyle="normal|bold"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:layout_marginBottom="2dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cart_count"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="top|right"
+                    android:background="@drawable/round_cart_circle"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white" />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_cart_outline"
+                    android:backgroundTint="@color/golden"
+                    android:id="@+id/productCart"
+                    android:layout_marginBottom="3dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right|bottom"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:background="@drawable/rect"
+        android:layout_marginLeft="@dimen/relLayout_padding_left"
+        android:layout_marginRight="@dimen/relLayout_padding_right"
+        android:weightSum="1"
+        android:elevation="3dp"
+        android:layout_below="@+id/zapToolBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/searchBarLayoutId">
+
+        <EditText
+            android:hint="Search Zappos"
+            android:id="@+id/searchQuery"
+            android:inputType="textPersonName"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:layout_width="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ems="10">
+        </EditText>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:theme="@style/SearchButton"
+            app:srcCompat="@drawable/search2"
+            android:id="@+id/imageView"
+            android:layout_weight=".2"
+            android:clickable="true"
+            android:onClick="onSearch"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/searchBarLayoutId"/>
+
+
+</RelativeLayout>
